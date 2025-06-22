@@ -2,7 +2,7 @@ require("nvchad.configs.lspconfig").defaults()
 
 local servers = {
   "html", "cssls", "intelephense", 
-  "pyright", "jsdtls", "crystalline",
+  "pyright", "jdtls", "crystalline",
   "nimlangserver", "nginx-language-server"
 }
 
