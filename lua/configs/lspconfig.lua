@@ -1,11 +1,23 @@
 require("nvchad.configs.lspconfig").defaults()
 
+local on_attach = require("nvchad.configs.lspconfig").on_attach
+local capabilities = require("nvchad.configs.lspconfig").capabilities
+local lspconfig = require "lspconfig"
+local util = require "lspconfig/util"
+
 local servers = {
   "html", "cssls", "intelephense", 
-  "pyright", "jdtls", "crystalline",
+  "pyright", "crystalline",
   "nimlangserver", "nginx-language-server"
 }
 
 vim.lsp.enable(servers)
+
+lspconfig.jdtls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { vim.fn.expand "~/.local/share/nvim/mason/bin/jdtls" },
+  filetypes = { "java" },
+}
 
 -- read :h vim.lsp.config for changing options of lsp servers 
