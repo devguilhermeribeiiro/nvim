@@ -35,3 +35,11 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+require("nvim-tree").setup({
+  view = {
+    width = 60,
+    adaptive_size = false,
+  }
+})
+

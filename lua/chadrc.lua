@@ -6,19 +6,11 @@
 local M = {}
 
 M.base46 = {
-	theme = "gatekeeper",
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+	theme = "aquarium",
 }
 
--- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
---}
+M.ui.nvimtree = {
+  override_options = require("plugins.configs.nvimtree"),
+}
 
 return M

@@ -10,12 +10,27 @@ local workspace_dir = home .. "/.local/share/jdtls-workspace/" .. vim.fn.fnamemo
 
 local servers = {
   "html", "cssls", "intelephense", 
-  "pyright", "crystalline",
-  "nimlangserver", "nginx-language-server"
+  "pyright"
 }
 
 vim.lsp.enable(servers)
 
+lspconfig.nim_langserver.setup {
+  cmd = { "nimlangserver" },
+  filetypes = { "nim" },
+  on_attach = on_attach,
+  capabilities = capabilities,
+  root_dir = function(fname)
+    vim.fn.getcwd()
+  end,
+  settings = {
+    nim = {
+      nimsuggestPath = home .. "/.nimble/bin/nimsuggest"
+    }
+  }
+}
+
+-- Configuração do JDTLS
 lspconfig.jdtls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -26,4 +41,4 @@ lspconfig.jdtls.setup {
   filetypes = { "java" },
   root_dir = util.root_pattern('pom.xml', '.git'),
 }
--- read :h vim.lsp.config for changing options of lsp servers 
+
