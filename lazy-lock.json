@@ -1,6 +1,7 @@
 {
   "LuaSnip": { "branch": "master", "commit": "831a130291eb6dae0dabd2748d0a99401a2eebc4" },
   "barbecue.nvim": { "branch": "main", "commit": "3e31404f0b93a2c30d151abf0648650ac811c664" },
+  "catppuccin": { "branch": "main", "commit": "82f3dcedc9acc242d2d4f98abca02e2f10a75248" },
   "cmp-buffer": { "branch": "main", "commit": "b74fab3656eea9de20a9b8116afa3cfc4ec09657" },
   "cmp-cmdline": { "branch": "main", "commit": "d126061b624e0af6c3a556428712dd4d4194ec6d" },
   "cmp-nvim-lsp": { "branch": "main", "commit": "a8912b88ce488f411177fc8aed358b04dc246d7b" },
@@ -15,7 +16,6 @@
   "mason.nvim": { "branch": "main", "commit": "8024d64e1330b86044fed4c8494ef3dcd483a67c" },
   "noice.nvim": { "branch": "main", "commit": "0427460c2d7f673ad60eb02b35f5e9926cf67c59" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
-  "nvim": { "branch": "main", "commit": "82f3dcedc9acc242d2d4f98abca02e2f10a75248" },
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
   "nvim-highlight-colors": { "branch": "main", "commit": "b42a5ccec7457b44e89f7ed3b3afb1b375bb2093" },
   "nvim-lspconfig": { "branch": "master", "commit": "f47cd681d7cb6048876a2e908b6d8ba1e530d152" },
@@ -26,7 +26,7 @@
   "nvim-web-devicons": { "branch": "master", "commit": "0422a19d9aa3aad2c7e5cca167e5407b13407a9d" },
   "oil.nvim": { "branch": "master", "commit": "bbad9a76b2617ce1221d49619e4e4b659b3c61fc" },
   "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
+  "rustaceanvim": { "branch": "master", "commit": "66398662c07d265b226897500ed50eafba3dffb4" },
   "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
-  "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" },
-  "tokyonight.nvim": { "branch": "main", "commit": "057ef5d260c1931f1dffd0f052c685dcd14100a3" }
+  "toggleterm.nvim": { "branch": "main", "commit": "50ea089fc548917cc3cc16b46a8211833b9e3c7c" }
 }
