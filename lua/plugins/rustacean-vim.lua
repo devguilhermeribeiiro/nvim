@@ -1,4 +1,4 @@
-{
+return {
   'mrcjkb/rustaceanvim',
   -- To avoid being surprised by breaking changes,
   -- I recommend you set a version range
