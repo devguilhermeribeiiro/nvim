@@ -1,15 +1,26 @@
 return {
     {
+        "hrsh7th/nvim-cmp",
+        dependencies = {
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-cmdline",
+        },
+    },
+
+    {
         "hrsh7th/cmp-cmdline",
         event = "CmdlineEnter",
         config = function()
             local cmp = require("cmp")
+
             cmp.setup.cmdline("/", {
                 mapping = cmp.mapping.preset.cmdline(),
                 sources = {
                     { name = "buffer" }
                 }
             })
+
             cmp.setup.cmdline(":", {
                 mapping = cmp.mapping.preset.cmdline(),
                 sources = cmp.config.sources({
@@ -17,7 +28,9 @@ return {
                 }, {
                     { name = "cmdline" }
                 }),
-                matching = { disallow_symbol_nonprefix_matching = false },
+                matching = {
+                    disallow_symbol_nonprefix_matching = false
+                },
             })
         end,
     },
@@ -25,9 +38,7 @@ return {
     {
         "folke/noice.nvim",
         event = "VeryLazy",
-        opts = {
-            -- add any options here
-        },
+        opts = {},
         dependencies = {
             "MunifTanjim/nui.nvim",
             "rcarriga/nvim-notify",
